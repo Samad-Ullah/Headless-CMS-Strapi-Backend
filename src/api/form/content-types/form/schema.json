@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "forms",
+  "info": {
+    "singularName": "form",
+    "pluralName": "forms",
+    "displayName": "Form",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "FullName": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "Email": {
+      "type": "email",
+      "required": true
+    },
+    "Qualification": {
+      "type": "enumeration",
+      "enum": [
+        "Bachelors",
+        "Masters",
+        "P.H.D"
+      ],
+      "required": true
+    },
+    "PreviousExperience": {
+      "type": "text"
+    },
+    "Phone": {
+      "type": "string"
+    },
+    "AppliedDesignation": {
+      "type": "string",
+      "required": true
+    },
+    "Resume": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
